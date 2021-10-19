@@ -12,7 +12,6 @@ setup(
     author="Syahrul Hamdani",
     author_email="syahrulhamdani.ds@gmail.com",
     package_dir={"": "src"},
-    # packages=find_packages(where="src"),
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
