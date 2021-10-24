@@ -13,6 +13,10 @@ def test_resource_not_found():
 
 def test_resource_to_dict():
     user = User()
+    employment = Employment()
+    address = Address()
+    subscription = Subscription()
+
     assert user.to_dict() == {
         "id": "",
         "uid": "",
@@ -58,4 +62,42 @@ def test_resource_to_dict():
         "subscription_payment_method": "",
         "subscription_subscription_term": "",
         "subscription_payment_term": "",
+    }
+    assert employment.to_dict() == {
+        "title": "",
+        "key_skill": "",
+    }
+    assert address.to_dict() == {
+        "id": "",
+        "uid": "",
+        "city": "",
+        "street_name": "",
+        "street_address": "",
+        "secondary_address": "",
+        "building_number": "",
+        "mail_box": "",
+        "community": "",
+        "zip_code": "",
+        "zip": "",
+        "postcode": "",
+        "time_zone": "",
+        "street_suffix": "",
+        "city_suffix": "",
+        "city_prefix": "",
+        "state": "",
+        "state_abbr": "",
+        "country": "",
+        "country_code": "",
+        "latitude": "",
+        "longitude": "",
+        "full_address": "",
+    }
+    assert subscription.to_dict() == {
+        "id": "",
+        "uid": "",
+        "plan": "",
+        "status": "",
+        "payment_method": "",
+        "subscription_term": "",
+        "payment_term": "",
     }
