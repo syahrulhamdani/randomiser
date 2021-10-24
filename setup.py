@@ -5,12 +5,13 @@ with open("README.md", "r") as f:
     long_desc = f.read()
 
 setup(
-    name="randomizer",
+    name="randomiser",
     version="0.0.1",
     description="Random data generator",
     url="https://github.com/syahrulhamdani/randomiser",
     author="Syahrul Hamdani",
     author_email="syahrulhamdani.ds@gmail.com",
+    packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[
         "Programming Language :: Python :: 3",

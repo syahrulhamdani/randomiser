@@ -1,8 +1,8 @@
 import requests
 from requests.exceptions import RequestException
 
-from randomizer.config import RESOURCE_TO_ENDPOINT
-from randomizer.exception import ResourceNotFound, RandomizerReadError
+from randomiser.config import RESOURCE_TO_ENDPOINT
+from randomiser.exception import ResourceNotFound, RandomizerReadError
 
 
 class Randomizer:
